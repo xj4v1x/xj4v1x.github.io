@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="color-scheme" content="dark light">
+    <title>Year progress bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        color: #444;
+        background-color: #EEE;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          color: #EEE;
+          background-color: #444;
+        }
+      }
+      h1, p {
+        text-align: center;
+      }
+      .progress {
+        background-color: lightgrey;
+        height: 300px;
+      }
+      @media (prefers-color-scheme: dark) {
+        .progress {
+          background-color: darkgrey;
+        }
+      }
+      .progress > svg {
+        display: block;
+        height: 100%;
+      }
+      #percent {
+        font-family: 'Courier New', Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Year progress  bar</h1>
+
+    <div class="progress" id="progress"></div>
+
+    <h1 id="percent"></h1>
+
+    <script src="progressbar.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
