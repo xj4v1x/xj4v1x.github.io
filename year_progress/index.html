@@ -8,45 +8,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       body {
-        color: #444;
-        background-color: #EEE;
+        color: #1A252E;
+        background-color: #1A252E;
+        width: 80%;  
+        margin-top: 10%;
+        margin-left:auto;
+        margin-right:auto;  
+
       }
       @media (prefers-color-scheme: dark) {
         body {
           color: #EEE;
-          background-color: #444;
+          background-color: #1A252E;
+          text-align: center;
         }
       }
       h1, p {
-        text-align: center;
+        text-align: center;        
+        font-family: 'Courier New', Courier, monospace;
+      }        
+
+      h2 {      
+        display: inline-block;             
+        width: 600px;                                                 
+        padding: 10px 0px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size:medium;
+        background-color: #27343F;
+      }      
+      #diaspasados_x{
+        text-align: left;
       }
-      .progress {
-        background-color: lightgrey;
-        height: 300px;
+      .javascr{
+        font-family: 'Courier New', Courier, monospace;
       }
+
       @media (prefers-color-scheme: dark) {
         .progress {
-          background-color: darkgrey;
+          background-color: #27343F;
         }
+      }
+      .espacio{
+        height: 50px;
       }
       .progress > svg {
         display: block;
-        height: 100%;
+        height: 50px;
       }
-      #percent {
+
+      #percent {                
         font-family: 'Courier New', Courier, monospace;
+        background-color: #27343F;
       }
+
     </style>
   </head>
   <body>
-    <h1>Year progress bar...</h1>
-
+    <h1>Loading 2025...</h1>
+    
     <div class="progress" id="progress"></div>
+    <p class="espacio"></p>
+    <div>
+      <h2 id="percent"></h2>
+    </div>
 
-    <h1 id="percent"></h1>
+    <div>
+      <h2 id="pasados"></h2>
+    </div>
+    
+    <div>
+      <h2 id="quedan"></h2>
+    </div>
+    <div>
+      <h2 id="diaspasados_x"></h2>
+    </div>
+    
+    <script class="javascr" src="progressbar.min.js"></script>
 
-    <script src="progressbar.min.js"></script>
+    <script src="main.js"></script>        
 
-    <script src="main.js"></script>
   </body>
 </html>
