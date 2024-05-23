@@ -1,5 +1,7 @@
 # year-progress-bar
+Jugando con Javascript
 
-Nowadays everything needs a progress bar.
-
+Basado en el trabajo de...
 https://hugovk.github.io/year-progress-bar
+
+
